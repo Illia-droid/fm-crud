@@ -64,7 +64,7 @@ module.exports.deleteThing = async (req, res, next) => {
     } = req;
     const [thing] = await Thing.deleteByPk(idThing);
     if (thing) {
-      return res.status(203).send({ data: thing });
+      return res.status(204).send({ data: thing });
     }
     res.status(400).send({ data: "Bad request" });
   } catch (error) {
