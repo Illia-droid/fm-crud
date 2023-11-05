@@ -5,7 +5,7 @@ CREATE TABLE things(
     created_at TIMESTAMP NOT NULL DEFAULT current_timestamp
 );
 INSERT INTO things(body)
-VALUES ('test text')
+VALUES ('test text 3')
 RETURNING *;
 UPDATE things
 SET bosy = 'new text',
